@@ -1,0 +1,52 @@
+:root {
+  /* Palette Definition (Light Mode) */
+  --bg-primary: #FAF9F6;          /* Warm soft off-white */
+  --bg-surface: #FFFFFF;          /* Pure white card backgrounds */
+  --bg-surface-alt: #F2F6FA;      /* Subtle pastel tinted background */
+  --text-main: #1E293B;           /* Dark navy */
+  --text-muted: #475569;          /* Slate navy for body text */
+  
+  --brand-blue: #93C5FD;          /* Main brand pastel blue */
+  --brand-blue-soft: #EFF6FF;     /* Soft blue container background */
+  --brand-yellow: #FDE047;        /* Pastel yellow highlight */
+  --brand-yellow-soft: #FEF9C3;   /* Soft yellow background */
+  --accent-pink: #F472B6;         /* Soft pink for hearts & small accents */
+  --accent-pink-soft: #FCE7F3;    /* Very light soft pink tint */
+  
+  --border-color: #E2E8F0;        /* Crisp, subtle borders */
+  --border-hover: #CBD5E1;
+  --card-shadow: 0 4px 20px -2px rgba(30, 41, 59, 0.05);
+  --card-shadow-hover: 0 10px 25px -3px rgba(30, 41, 59, 0.08);
+
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fredoka', cursive, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="dark"] {
+  /* Dark Theme */
+  --bg-primary: #0F172A;          /* Deep dark navy */
+  --bg-surface: #1E293B;          /* Slightly lighter blue surface */
+  --bg-surface-alt: #162032;      /* Deep surface contrast */
+  --text-main: #F8FAFC;           /* Off-white primary text */
+  --text-muted: #94A3B8;          /* Light slate secondary text */
+
+  --brand-blue: #60A5FA;          /* Electric/Pastel blue accent */
+  --brand-blue-soft: #1E293B;     /* Blue surface tint */
+  --brand-yellow: #FACC15;        /* Soft glowing yellow */
+  --brand-yellow-soft: #282718;   /* Dark yellow container tint */
+  --accent-pink: #F472B6;         /* Pastel pink details */
+  --accent-pink-soft: #2D1B28;    /* Dark pink container tint */
+
+  --border-color: #334155;
+  --border-hover: #475569;
+  --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.25);
+  --card-shadow-hover: 0 10px 25px -3px rgba(0, 0, 0, 0.35);
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luisa Triana | Systems & Computing Engineering Student</title>
+  <meta name="description" content="Portfolio of Luisa Triana — Systems & Computing Engineering student building for the web, cloud, data & IoT." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/components.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        Luisa Triana
+        <img src="./luisacoded/pinkheart.svg" class="nav-logo-heart" alt="pink heart" />
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#currently" class="nav-link">Currently</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#toolbox" class="nav-link">Toolbox</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <img src="./luisacoded/laptop.svg" alt="Laptop icon" />
+            <span>Developer & Engineering Student</span>
+          </div>
+          
+          <h1 class="hero-title">hi, i'm luisa ♡</h1>
+          
+          <p class="hero-subtitle">
+            systems & computing engineering student building things for the web, cloud, data & IoT.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              view my work
+              <img src="./luisacoded/rocket.svg" alt="" />
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              let's connect
+              <img src="./luisacoded/star.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-header-card">
+            <img src="./luisacoded/header.png" alt="Luisa's developer profile graphic" class="header-img" />
+            <img src="./luisacoded/star.svg" alt="Star decoration" class="sticker sticker-star" />
+            <img src="./luisacoded/rocket.svg" alt="Rocket decoration" class="sticker sticker-rocket" />
+            <img src="./luisacoded/code.svg" alt="Code symbol decoration" class="sticker sticker-code" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">
+          <img src="./luisacoded/star.svg" alt="Star" />
+          about me
+        </h2>
+
+        <div class="about-card">
+          <ul class="about-bullets">
+            <li class="about-bullet-item">
+              <img src="./luisacoded/pinkheart.svg" alt="heart" />
+              <span>systems & computing engineering student @ UTB</span>
+            </li>
+            <li class="about-bullet-item">
+              <img src="./luisacoded/pinkheart.svg" alt="heart" />
+              <span>software developer interested in web, cloud, data & IoT</span>
+            </li>
+            <li class="about-bullet-item">
+              <img src="./luisacoded/pinkheart.svg" alt="heart" />
+              <span>i like turning ideas into things that actually work</span>
+            </li>
+          </ul>
+
+          <p class="about-text">
+            I enjoy building practical software that solves real-world problems. Whether designing responsive frontend interfaces, configuring cloud infrastructure, or connecting telemetry data from hardware devices, I thrive at the intersection of modern web development, cloud computing, and data systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENTLY BUILDING -->
+    <section id="currently" class="featured-section">
+      <div class="container">
+        <div class="featured-card">
+          <span class="featured-badge">★ spotlight project</span>
+          
+          <div class="featured-header">
+            <div class="featured-title-group">
+              <img src="./luisacoded/ship.svg" alt="Ship Icon" />
+              <h3 class="featured-title">Sentinel HMI</h3>
+            </div>
+          </div>
+
+          <p class="featured-description">
+            A human-machine interface for an unmanned surface vehicle. Engineered for telemetry monitoring, navigation control, and real-time visualization.
+          </p>
+
+          <div class="featured-grid">
+            <div class="featured-feature">
+              <img src="./luisacoded/chart.svg" alt="Chart icon" />
+              <div class="featured-feature-info">
+                <h4>Real-Time Sensor Data</h4>
+                <p>Live telemetry processing and analytical dashboards.</p>
+              </div>
+            </div>
+
+            <div class="featured-feature">
+              <img src="./luisacoded/map.svg" alt="Map icon" />
+              <div class="featured-feature-info">
+                <h4>Maps & Visualization</h4>
+                <p>Interactive spatial mapping and trajectory tracking.</p>
+              </div>
+            </div>
+
+            <div class="featured-feature">
+              <img src="./luisacoded/laptop.svg" alt="Laptop icon" />
+              <div class="featured-feature-info">
+                <h4>Vehicle Control</h4>
+                <p>Command interfaces for remote vessel operations.</p>
+              </div>
+            </div>
+
+            <div class="featured-feature">
+              <img src="./luisacoded/cloud.svg" alt="Cloud icon" />
+              <div class="featured-feature-info">
+                <h4>IoT / Cloud Integration</h4>
+                <p>Seamless data pipelines and cloud backend connectivity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED PROJECTS -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">
+          <img src="./luisacoded/folder.svg" alt="Folder" />
+          selected projects
+        </h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div>
+              <div class="project-card-top">
+                <img src="./luisacoded/ship.svg" alt="Ship Icon" class="project-icon" />
+              </div>
+              <h3 class="project-title">Sentinel HMI</h3>
+              <p class="project-desc">
+                Human-machine interface designed for monitoring unmanned surface vehicles with live maps, sensors, and telemetry data.
+              </p>
+              <div class="project-tags">
+                <span class="tag">IoT</span>
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <span class="project-link">
+                <img src="./luisacoded/star.svg" alt="Star" /> Featured System
+              </span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <div class="project-card-top">
+                <img src="./luisacoded/cloud.svg" alt="Cloud Icon" class="project-icon" />
+              </div>
+              <h3 class="project-title">Cloud Telemetry Pipeline</h3>
+              <p class="project-desc">
+                Scalable cloud infrastructure built for receiving, processing, and storing sensor data streams efficiently in real time.
+              </p>
+              <div class="project-tags">
+                <span class="tag">AWS</span>
+                <span class="tag">Docker</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">MySQL</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/lutriana" target="_blank" rel="noopener noreferrer" class="project-link">
+                <img src="./luisacoded/code.svg" alt="Code" /> GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <div class="project-card-top">
+                <img src="./luisacoded/laptop.svg" alt="Laptop Icon" class="project-icon" />
+              </div>
+              <h3 class="project-title">Developer Dashboard</h3>
+              <p class="project-desc">
+                Modern web application featuring real-time state management, data visualization graphs, and clean responsive UI design.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Vite</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Tailwind</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/lutriana" target="_blank" rel="noopener noreferrer" class="project-link">
+                <img src="./luisacoded/code.svg" alt="Code" /> GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLBOX -->
+    <section id="toolbox" class="toolbox-section">
+      <div class="container">
+        <h2 class="section-title">
+          <img src="./luisacoded/code.svg" alt="Code" />
+          toolbox
+        </h2>
+
+        <div class="toolbox-group">
+          <h3 class="toolbox-group-title">Languages</h3>
+          <div class="toolbox-grid">
+            <div class="sticker-card">
+              <img src="./luisacoded/java.svg" alt="Java" loading="lazy" />
+              <span class="sticker-name">Java</span>
+            </div>
+            <div class="sticker-card">
+              <img src="./luisacoded/python.svg" alt="Python" loading="lazy" />
+              <span class="sticker-name">Python</span>
+            </div>
+            <div class="sticker-card">
+              <img src="./luisacoded/typescript.svg" alt="TypeScript" loading="lazy" />
+              <span class="sticker-name">TypeScript</span>
+            </div>
+            <div class="sticker-card">
+              <img src="./luisacoded/javascript.svg" alt="JavaScript" loading="lazy" />
+              <span class="sticker-name">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="toolbox-group">
+          <h3 class="toolbox-group-title">Frontend & Backend</h3>
+          <div class="toolbox-grid">
+            <div class="sticker-card">
+              <img src="./luisacoded/react.svg" alt="React" loading="lazy" />
+              <span class="sticker-name">React</span>
+            </div>
+            <div class="sticker-card">
+              <img src="./luisacoded/vite.svg" alt="Vite" loading="lazy" />
+              <span class="sticker-name">Vite</span>
+            </div>
+            <div class="sticker-card">
+              <img src="./luisacoded/nodejs.svg" alt="Node.js" loading="lazy" />
+              <span class="sticker-name">Node.js</span>
+            </div>
+            <div class="sticker-card">
+              <img src="./luisacoded/fastapi.svg" alt="FastAPI" loading="lazy" />
+              <span class="sticker-name">FastAPI</span>
+            </div>
+            <div class="sticker-card">
+              <img src="./luisacoded/django.svg" alt="Django" loading="lazy" />
+              <span class="sticker-name">Django</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="toolbox-group">
+          <h3 class="toolbox-group-title">Cloud, Data & Infrastructure</h3>
+          <div class="toolbox-grid">
+            <div class="sticker-card">
+              <img src="./luisacoded/aws.svg" alt="AWS" loading="lazy" />
+              <span class="sticker-name">AWS</span>
+            </div>
+            <div class="sticker-card">
+              <img src="./luisacoded/docker.svg" alt="Docker" loading="lazy" />
+              <span class="sticker-name">Docker</span>
+            </div>
+            <div class="sticker-card">
+              <img src="./luisacoded/terraform.svg" alt="Terraform" loading="lazy" />
+              <span class="sticker-name">Terraform</span>
+            </div>
+            <div class="sticker-card">
+              <img src="./luisacoded/mysql.svg" alt="MySQL" loading="lazy" />
+              <span class="sticker-name">MySQL</span>
+            </div>
+            <div class="sticker-card">
+              <img src="./luisacoded/git.svg" alt="Git" loading="lazy" />
+              <span class="sticker-name">Git</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-card">
+          <h2 class="section-title" style="margin-bottom: 0.5rem;">
+            <img src="./luisacoded/pinkheart.svg" alt="Heart" />
+            let's connect
+          </h2>
+          
+          <p class="contact-subtitle">
+            Feel free to reach out for collaborations, questions, or just to say hi!
+          </p>
+
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/lutriana/" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <img src="./luisacoded/linkedin.svg" alt="LinkedIn" />
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://www.instagram.com/codesluli/" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <img src="./luisacoded/instagram.svg" alt="Instagram" />
+              <span>Instagram</span>
+            </a>
+
+            <a href="mailto:codesluli@gmail.com" class="contact-item">
+              <img src="./luisacoded/mail.svg" alt="Email" />
+              <span>Email Me</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-motto">
+        build · learn · improve · repeat 
+        <img src="./luisacoded/pinkheart.svg" alt="pink heart" />
+      </p>
+      <p>&copy; Luisa Triana. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
