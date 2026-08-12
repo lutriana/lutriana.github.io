@@ -173,11 +173,8 @@
 }
 
 .hero-title {
-  font-family: var(--font-display);
-  font-size: 3.25rem;
-  line-height: 1.15;
-  color: var(--text-main);
-  letter-spacing: -0.02em;
+  width: 220px;
+  height: 60px;
 }
 
 .hero-subtitle {
