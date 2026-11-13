@@ -1,0 +1,41 @@
+/*
+  ICONS
+  The line icons live in /luisacoded as plain SVG files (ic-*.svg).
+  They are painted through a CSS mask, so they take the current text
+  color and switch automatically between light and dark theme.
+
+  Usage: <span class="icon i-star" aria-hidden="true"></span>
+*/
+
+.icon {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  background-color: currentColor;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.i-heart          { -webkit-mask-image: url('../luisacoded/ic-heart.svg');          mask-image: url('../luisacoded/ic-heart.svg'); }
+.i-star           { -webkit-mask-image: url('../luisacoded/ic-star.svg');           mask-image: url('../luisacoded/ic-star.svg'); }
+.i-rocket         { -webkit-mask-image: url('../luisacoded/ic-rocket.svg');         mask-image: url('../luisacoded/ic-rocket.svg'); }
+.i-code           { -webkit-mask-image: url('../luisacoded/ic-code.svg');           mask-image: url('../luisacoded/ic-code.svg'); }
+.i-laptop         { -webkit-mask-image: url('../luisacoded/ic-laptop.svg');         mask-image: url('../luisacoded/ic-laptop.svg'); }
+.i-ship           { -webkit-mask-image: url('../luisacoded/ic-ship.svg');           mask-image: url('../luisacoded/ic-ship.svg'); }
+.i-chart          { -webkit-mask-image: url('../luisacoded/ic-chart.svg');          mask-image: url('../luisacoded/ic-chart.svg'); }
+.i-map            { -webkit-mask-image: url('../luisacoded/ic-map.svg');            mask-image: url('../luisacoded/ic-map.svg'); }
+.i-compass        { -webkit-mask-image: url('../luisacoded/ic-compass.svg');        mask-image: url('../luisacoded/ic-compass.svg'); }
+.i-cloud          { -webkit-mask-image: url('../luisacoded/ic-cloud.svg');          mask-image: url('../luisacoded/ic-cloud.svg'); }
+.i-arrow-right    { -webkit-mask-image: url('../luisacoded/ic-arrow-right.svg');    mask-image: url('../luisacoded/ic-arrow-right.svg'); }
+.i-arrow-up-right { -webkit-mask-image: url('../luisacoded/ic-arrow-up-right.svg'); mask-image: url('../luisacoded/ic-arrow-up-right.svg'); }
+.i-linkedin       { -webkit-mask-image: url('../luisacoded/ic-linkedin.svg');       mask-image: url('../luisacoded/ic-linkedin.svg'); }
+.i-instagram      { -webkit-mask-image: url('../luisacoded/ic-instagram.svg');      mask-image: url('../luisacoded/ic-instagram.svg'); }
+.i-github         { -webkit-mask-image: url('../luisacoded/ic-github.svg');         mask-image: url('../luisacoded/ic-github.svg'); }
+.i-mail           { -webkit-mask-image: url('../luisacoded/ic-mail.svg');           mask-image: url('../luisacoded/ic-mail.svg'); }
+.i-sun            { -webkit-mask-image: url('../luisacoded/ic-sun.svg');            mask-image: url('../luisacoded/ic-sun.svg'); }
+.i-moon           { -webkit-mask-image: url('../luisacoded/ic-moon.svg');           mask-image: url('../luisacoded/ic-moon.svg'); }

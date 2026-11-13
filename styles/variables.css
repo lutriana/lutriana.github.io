@@ -1,29 +1,46 @@
 :root {
-  /* Palette Definition (Light Mode) */
-  --bg-primary: #FAF9F6;          /* Warm soft off-white */
-  --bg-surface: #FFFFFF;          /* Pure white card backgrounds */
-  --bg-surface-alt: #F2F6FA;      /* Subtle pastel tinted background */
-  --text-main: #1E293B;           /* Dark navy */
-  --text-muted: #475569;          /* Slate navy for body text */
-  
-  --brand-blue: #93C5FD;          /* Main brand pastel blue */
-  --brand-blue-soft: #EFF6FF;     /* Soft blue container background */
-  --brand-yellow: #FDE047;        /* Pastel yellow highlight */
-  --brand-yellow-soft: #FEF9C3;   /* Soft yellow background */
-  --accent-pink: #F472B6;         /* Soft pink for hearts & small accents */
-  --accent-pink-soft: #FCE7F3;    /* Very light soft pink tint */
-  
-  --border-color: #E2E8F0;        /* Crisp, subtle borders */
-  --border-hover: #CBD5E1;
-  --card-shadow: 0 4px 20px -2px rgba(30, 41, 59, 0.05);
-  --card-shadow-hover: 0 10px 25px -3px rgba(30, 41, 59, 0.08);
+  color-scheme: light;
 
+  /* Surfaces (Light Mode) */
+  --bg-primary: #FBF8F6;          /* Warm off-white */
+  --bg-alt: #F4ECEF;              /* Blush-tinted band (toolbox) */
+  --bg-surface: #FFFFFF;          /* Cards */
+  --bg-surface-alt: #F7EEF1;      /* Icon tiles, soft fills */
+  --nav-bg: rgba(251, 248, 246, 0.88);
+
+  /* Text */
+  --text-main: #1C1519;           /* Near-black, warm */
+  --text-body: #3F353A;           /* Paragraphs */
+  --text-muted: #5E5258;          /* Labels, meta */
+
+  /* Brand */
+  --accent: #B0306A;              /* Raspberry pink — the heart, refined */
+  --accent-hover: #9E2A5B;
+  --on-accent: #FFFFFF;           /* Text on accent buttons */
+  --accent-soft: #F7EEF1;
+
+  /* Lines */
+  --border-color: #EDE4E7;
+  --border-strong: #D8CDD1;
+  --border-hover: #D9B8C6;
+
+  /* Spotlight band (dark in both themes) */
+  --band-bg: #1C1519;
+  --band-surface: #241C21;
+  --band-border: #3A2F35;
+  --band-text: #F5EEF1;
+  --band-muted: #C9B8C0;
+  --band-accent: #F2A7C3;
+
+  /* Type */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
   --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-display: 'Fredoka', cursive, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  --radius-sm: 8px;
+  /* Shape & motion */
+  --radius-sm: 6px;
   --radius-md: 16px;
-  --radius-lg: 24px;
+  --radius-lg: 20px;
   --radius-full: 9999px;
 
   --transition-fast: 0.15s ease;
@@ -31,22 +48,31 @@
 }
 
 [data-theme="dark"] {
-  /* Dark Theme */
-  --bg-primary: #0F172A;          /* Deep dark navy */
-  --bg-surface: #1E293B;          /* Slightly lighter blue surface */
-  --bg-surface-alt: #162032;      /* Deep surface contrast */
-  --text-main: #F8FAFC;           /* Off-white primary text */
-  --text-muted: #94A3B8;          /* Light slate secondary text */
+  color-scheme: dark;
 
-  --brand-blue: #60A5FA;          /* Electric/Pastel blue accent */
-  --brand-blue-soft: #1E293B;     /* Blue surface tint */
-  --brand-yellow: #FACC15;        /* Soft glowing yellow */
-  --brand-yellow-soft: #282718;   /* Dark yellow container tint */
-  --accent-pink: #F472B6;         /* Pastel pink details */
-  --accent-pink-soft: #2D1B28;    /* Dark pink container tint */
+  --bg-primary: #120E11;
+  --bg-alt: #1A1418;
+  --bg-surface: #1C161A;
+  --bg-surface-alt: #241C21;
+  --nav-bg: rgba(18, 14, 17, 0.85);
 
-  --border-color: #334155;
-  --border-hover: #475569;
-  --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.25);
-  --card-shadow-hover: 0 10px 25px -3px rgba(0, 0, 0, 0.35);
+  --text-main: #F5EEF1;
+  --text-body: #CDBFC5;
+  --text-muted: #B5A6AD;
+
+  --accent: #F08DB4;
+  --accent-hover: #F5A9C7;
+  --on-accent: #120E11;
+  --accent-soft: #2A1A22;
+
+  --border-color: #2E252A;
+  --border-strong: #3A2F35;
+  --border-hover: #5A3F4C;
+
+  --band-bg: #0C090B;
+  --band-surface: #161115;
+  --band-border: #2E252A;
+  --band-text: #F5EEF1;
+  --band-muted: #B5A6AD;
+  --band-accent: #F08DB4;
 }
