@@ -30,8 +30,8 @@
 }
 
 .nav-logo-heart {
-  width: 16px;
-  height: 16px;
+  width: 26px;
+  height: 26px;
   color: var(--accent);
   transition: transform var(--transition-normal);
 }
