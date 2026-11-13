@@ -5,7 +5,6 @@
   --bg-primary: #FBF8F6;          /* Warm off-white */
   --bg-alt: #F4ECEF;              /* Blush-tinted band (toolbox) */
   --bg-surface: #FFFFFF;          /* Cards */
-  --bg-surface-alt: #F7EEF1;      /* Icon tiles, soft fills */
   --nav-bg: rgba(251, 248, 246, 0.88);
 
   /* Text */
@@ -53,7 +52,6 @@
   --bg-primary: #120E11;
   --bg-alt: #1A1418;
   --bg-surface: #1C161A;
-  --bg-surface-alt: #241C21;
   --nav-bg: rgba(18, 14, 17, 0.85);
 
   --text-main: #F5EEF1;
