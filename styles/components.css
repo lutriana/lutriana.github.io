@@ -36,6 +36,15 @@
   transition: transform var(--transition-normal);
 }
 
+.nav-logo-heart--dark,
+[data-theme="dark"] .nav-logo-heart--light {
+  display: none;
+}
+
+[data-theme="dark"] .nav-logo-heart--dark {
+  display: block;
+}
+
 .nav-logo:hover .nav-logo-heart {
   transform: scale(1.15);
 }
