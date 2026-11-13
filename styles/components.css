@@ -36,6 +36,18 @@
   transition: transform var(--transition-normal);
 }
 
+.nav-logo-name {
+  font-family: var(--font-display);
+}
+
+.nav-logo-name-luisa {
+  color: var(--accent);
+}
+
+.nav-logo-name-triana {
+  color: var(--text-main);
+}
+
 .nav-logo-heart--dark,
 [data-theme="dark"] .nav-logo-heart--light {
   display: none;
