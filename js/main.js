@@ -77,6 +77,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }).catch(() => {});
   }
 
+  // 3b. Dock scroll hint: on narrow screens the dock scrolls sideways,
+  // so fade the edges that hide icons and show an arrow while there's more
+  const dock = document.querySelector('.dock');
+  const dockList = dock && dock.querySelector('ul');
+  const dockMore = dock && dock.querySelector('.dock-more');
+  if (dockList) {
+    const updateDock = () => {
+      const max = dockList.scrollWidth - dockList.clientWidth;
+      dock.classList.toggle('can-left', dockList.scrollLeft > 2);
+      dock.classList.toggle('can-right', dockList.scrollLeft < max - 2);
+    };
+    dockList.addEventListener('scroll', updateDock, { passive: true });
+    window.addEventListener('resize', updateDock);
+    window.addEventListener('load', updateDock);
+    updateDock();
+    if (dockMore) {
+      dockMore.addEventListener('click', () => {
+        dockList.scrollBy({ left: dockList.clientWidth * 0.7, behavior: 'smooth' });
+      });
+    }
+  }
+
   // 4. Footer year
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
