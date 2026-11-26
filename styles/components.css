@@ -1091,6 +1091,10 @@ a.project-link:hover { transform: translateY(-2px); }
   font-size: 0.88rem;
 }
 
+/* the warm brown borders vanish on the dark window; use a faint light line */
+[data-theme="dark"] :is(.mock, .mail-window) { border-color: rgba(255, 255, 255, 0.08); }
+[data-theme="dark"] .mail-fields div { border-bottom-color: rgba(255, 255, 255, 0.1); }
+
 .mail-fields dt { color: var(--ink-muted); }
 .mail-fields dd { color: var(--ink); font-weight: 600; }
 
@@ -1101,11 +1105,11 @@ a.project-link:hover { transform: translateY(-2px); }
 }
 
 .send-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.4rem;
-  margin: 0 1.2rem 1.2rem auto;
-  float: right;
+  width: fit-content;
+  margin: 0.4rem 1.2rem 1.2rem auto;
   padding: 0.5rem 1.2rem;
   border-radius: 999px;
   background: var(--blue);
@@ -1189,8 +1193,48 @@ a.project-link:hover { transform: translateY(-2px); }
   .notes-card { left: 0; }
 }
 
+.dock-more { display: none; }
+
 @media (max-width: 760px) {
   .dock ul { overflow-x: auto; scrollbar-width: none; }
+  .dock ul::-webkit-scrollbar { display: none; }
+
+  /* the mask below would clip the pill's shadow, so the wrapper carries it */
+  .dock { border-radius: 20px; box-shadow: 0 8px 24px rgba(76, 70, 54, 0.12); }
+  .dock ul {
+    box-shadow: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 var(--fade-l, 0px), #000 calc(100% - var(--fade-r, 0px)), transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 var(--fade-l, 0px), #000 calc(100% - var(--fade-r, 0px)), transparent 100%);
+  }
+  /* fade only the edges that still hide icons (classes set in main.js) */
+  .dock.can-left ul { --fade-l: 36px; }
+  .dock.can-right ul { --fade-r: 64px; }
+
+  .dock-more {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    margin-top: -14px;
+    border-radius: 50%;
+    background: var(--blue);
+    color: #fff;
+    box-shadow: 0 3px 8px rgba(76, 70, 54, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+  [data-theme="dark"] .dock-more { color: #1C2232; }
+  .dock-more .icon { width: 15px; height: 15px; animation: dock-nudge 1.4s ease-in-out infinite; }
+  .dock.can-right .dock-more { opacity: 1; pointer-events: auto; }
+}
+
+@keyframes dock-nudge {
+  0%, 100% { transform: translateX(-1px); }
+  50% { transform: translateX(3px); }
 }
 
 @media (max-width: 860px) {
@@ -1250,6 +1294,10 @@ a.project-link:hover { transform: translateY(-2px); }
   .contact-grid { grid-template-columns: 1fr; }
   .contact-stack { padding-bottom: 0; }
   .notes-card { position: relative; width: 100%; margin-top: -1.5rem; }
+  /* leave room for the overlapping notes card so Send stays visible */
+  .mail-window { padding-bottom: 2.25rem; }
+  .mail-body { min-height: 0; padding-bottom: 0.4rem; }
+  .send-btn { padding: 0.65rem 1.4rem; }
 }
 
 @media (max-width: 520px) {
@@ -1259,7 +1307,15 @@ a.project-link:hover { transform: translateY(-2px); }
   .page--right { grid-template-columns: 1fr; }
   .photostrip { flex-direction: row; width: 100%; max-width: 280px; margin: 0 auto; }
   .photostrip span { flex: 1; }
-  .stars-panel { padding: 3rem 1rem; }
   .dock-tile { width: 42px; height: 42px; padding: 6px; }
   .terminal { font-size: 0.78rem; padding: 1.1rem 1rem 5.5rem; }
+
+  /* tighter vertical rhythm on phones: desktop gaps leave half-empty screens */
+  .section { padding: 3.5rem 0; }
+  .stars-panel { padding: 3rem 1rem; }
+  .grid-panel { padding: 3rem 1.25rem; }
+  .boxes { margin-top: 2.5rem; gap: 2.5rem; }
+  .lead-hand { margin: 1.2rem auto 2.5rem; font-size: 1.3rem; }
+  .projects { gap: 3.5rem; }
+  .contact { padding-bottom: 3rem; }
 }
