@@ -1,0 +1,112 @@
+/* =========================================================
+   PIXEL ICONS — colours for the sprite in index.html
+   (drawn in luisacoded/pixels.src.txt, built by tools/build-pixels.py)
+   Light: navy ink on bright fills. Dark: chalk ink on deeper fills.
+   ========================================================= */
+:root {
+  --d-ink: #2B3550;
+  --d-surface: #FFFFFF;
+  --d-white: #FFFFFF;
+  --d-blue: #8FB6E6;
+  --d-blue-2: #4F86C6;
+  --d-yellow: #FFD66B;
+  --d-pink: #FF9EDB;
+  --d-green: #9BD18B;
+  --d-teal: #5FC9B9;
+  --d-red: #F27C6B;
+  --d-purple: #B98AF0;
+  --d-orange: #F6A04D;
+  --d-django: #3E9A6C;
+  --d-ts: #4F86C6;
+  --d-yellow-2: #F0B43C;
+  --d-pink-2: #E66BBF;
+  --d-green-2: #6FAE6A;
+  --d-teal-2: #3FA89A;
+  --d-purple-2: #9566D6;
+}
+
+[data-theme="dark"] {
+  --d-ink: #F3EDD8;
+  --d-surface: #2B3449;
+  --d-white: #FFF8E6;
+  --d-blue: #5C8DD0;
+  --d-blue-2: #9CC3F0;
+  --d-yellow: #E8B93C;
+  --d-pink: #E070C0;
+  --d-green: #6FAE6A;
+  --d-teal: #3FA89A;
+  --d-red: #E0614E;
+  --d-purple: #9A6BDB;
+  --d-orange: #F0A24A;
+  --d-django: #2F8A5E;
+  --d-ts: #3F6FA8;
+  --d-yellow-2: #B8892A;
+  --d-pink-2: #B04F96;
+  --d-green-2: #4E8A4C;
+  --d-teal-2: #2C7E73;
+  --d-purple-2: #6E46AE;
+}
+
+/* Icons sitting on paper / white photo frames keep the light version */
+[data-theme="dark"] :is(.polaroid, .photostrip, .notebook, .paper-note) {
+  --d-ink: #2B3550;
+  --d-surface: #FFFFFF;
+  --d-white: #FFFFFF;
+  --d-blue: #8FB6E6;
+  --d-blue-2: #4F86C6;
+  --d-yellow: #FFD66B;
+  --d-pink: #FF9EDB;
+  --d-yellow-2: #F0B43C;
+  --d-pink-2: #E66BBF;
+}
+
+.doodle-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.doodle {
+  display: block;
+  shape-rendering: crispEdges;
+  overflow: visible;
+  fill: none;
+  stroke: var(--d-ink);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* sizes in their containers (these replace the old <img> rules) */
+.dock-tile .doodle,
+.box-logos .doodle { width: 100%; height: 100%; }
+
+.photostrip span .doodle { width: 72%; height: auto; }
+
+.mock-body .doodle {
+  width: 46%;
+  height: auto;
+  filter: drop-shadow(0 6px 10px rgba(76, 70, 54, 0.15));
+  transition: transform 0.4s var(--ease);
+}
+
+.project:hover .mock-body .doodle { transform: scale(1.08) rotate(-4deg); }
+
+.polaroid .doodle {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  padding: 14px;
+  background: #EEF4FB;
+}
+
+.polaroid--b .doodle { background: #FFF6CC; }
+
+/* surfaces that hold icons follow the theme */
+[data-theme="dark"] .dock-tile,
+[data-theme="dark"] .box-logos li { background: #2B3449; }
+
+[data-theme="dark"] .mock-body--yellow { background: #4A4330; }
+[data-theme="dark"] .mock-body--blue   { background: #2D3B55; }
+[data-theme="dark"] .mock-body--pink   { background: #4A2E45; }

@@ -1,76 +1,67 @@
 :root {
   color-scheme: light;
 
-  /* Surfaces (Light Mode) */
-  --bg-primary: #FBF8F6;          /* Warm off-white */
-  --bg-alt: #F4ECEF;              /* Blush-tinted band (toolbox) */
-  --bg-surface: #FFFFFF;          /* Cards */
-  --nav-bg: rgba(251, 248, 246, 0.88);
+  /* Desktop / page */
+  --bg: #FFFBD1;                  /* Butter yellow */
+  --bg-menubar: rgba(255, 246, 190, 0.86);
+  --grid-line: rgba(102, 152, 204, 0.16);
+  --star: #8FB6E6;
 
-  /* Text */
-  --text-main: #1C1519;           /* Near-black, warm */
-  --text-body: #3F353A;           /* Paragraphs */
-  --text-muted: #5E5258;          /* Labels, meta */
+  /* Ink */
+  --blue: #5F8FC4;                /* Cornflower — headings */
+  --blue-soft: #8FB6E6;           /* Sub-headings */
+  --ink: #4C4636;                 /* Body on butter */
+  --ink-muted: #6E6553;
+  --ink-paper: #6B5E4D;           /* Handwriting on paper */
+  --pink: #C2338F;                /* Highlighted words */
+  --pink-bright: #FF8AE6;         /* Folders, decoration */
 
-  /* Brand */
-  --accent: #B0306A;              /* Raspberry pink — the heart, refined */
-  --accent-hover: #9E2A5B;
-  --on-accent: #FFFFFF;           /* Text on accent buttons */
-  --accent-soft: #F7EEF1;
+  /* Paper & surfaces */
+  --paper: #F4F0E6;
+  --paper-edge: #DCD4C2;
+  --window: #FFFFFF;
+  --window-bar: #EFEDE8;
+  --notes: #FBF5E9;
+  --terminal: #1F2633;
+  --terminal-text: #E8EEF7;
 
-  /* Lines */
-  --border-color: #EDE4E7;
-  --border-strong: #D8CDD1;
-  --border-hover: #D9B8C6;
-
-  /* Spotlight band (dark in both themes) */
-  --band-bg: #1C1519;
-  --band-surface: #241C21;
-  --band-border: #3A2F35;
-  --band-text: #F5EEF1;
-  --band-muted: #C9B8C0;
-  --band-accent: #F2A7C3;
+  --shadow-soft: 0 10px 30px rgba(76, 70, 54, 0.14);
+  --shadow-sticker: 0 4px 10px rgba(76, 70, 54, 0.18);
 
   /* Type */
-  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: 'Lexend Exa', 'Helvetica Neue', Arial, sans-serif;
+  --font-hand: 'Gaegu', 'Comic Sans MS', cursive;
+  --font-script: 'Fraunces', Georgia, serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
 
-  /* Shape & motion */
-  --radius-sm: 6px;
-  --radius-md: 16px;
-  --radius-lg: 20px;
-  --radius-full: 9999px;
-
-  --transition-fast: 0.15s ease;
-  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 [data-theme="dark"] {
   color-scheme: dark;
 
-  --bg-primary: #120E11;
-  --bg-alt: #1A1418;
-  --bg-surface: #1C161A;
-  --nav-bg: rgba(18, 14, 17, 0.85);
+  --bg: #1C2232;                  /* Night desktop */
+  --bg-menubar: rgba(28, 34, 50, 0.86);
+  --grid-line: rgba(143, 182, 230, 0.10);
+  --star: #3F5A86;
 
-  --text-main: #F5EEF1;
-  --text-body: #CDBFC5;
-  --text-muted: #B5A6AD;
+  --blue: #9CC3F0;
+  --blue-soft: #7FA6D6;
+  --ink: #EDE6CF;
+  --ink-muted: #BDB59D;
+  --ink-paper: #5E5243;
+  --pink: #FF8AE6;
+  --pink-bright: #F27BD6;
 
-  --accent: #F08DB4;
-  --accent-hover: #F5A9C7;
-  --on-accent: #120E11;
-  --accent-soft: #2A1A22;
+  --paper: #E9E3D3;
+  --paper-edge: #BDB39C;
+  --window: #2A3246;
+  --window-bar: #343D54;
+  --notes: #EFE7D3;
+  --terminal: #111622;
+  --terminal-text: #E8EEF7;
 
-  --border-color: #2E252A;
-  --border-strong: #3A2F35;
-  --border-hover: #5A3F4C;
-
-  --band-bg: #0C090B;
-  --band-surface: #161115;
-  --band-border: #2E252A;
-  --band-text: #F5EEF1;
-  --band-muted: #B5A6AD;
-  --band-accent: #F08DB4;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-sticker: 0 4px 10px rgba(0, 0, 0, 0.35);
 }
